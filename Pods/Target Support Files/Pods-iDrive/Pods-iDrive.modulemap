@@ -1,0 +1,6 @@
+framework module Pods_iDrive {
+  umbrella header "Pods-iDrive-umbrella.h"
+
+  export *
+  module * { export * }
+}

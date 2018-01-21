@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		196AE43D200B019E00926A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196AE43C200B019E00926A11 /* AppDelegate.swift */; };
+		196AE43F200B019E00926A11 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196AE43E200B019E00926A11 /* SignInVC.swift */; };
+		196AE442200B019E00926A11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196AE440200B019E00926A11 /* Main.storyboard */; };
+		196AE444200B019E00926A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196AE443200B019E00926A11 /* Assets.xcassets */; };
+		196AE447200B019E00926A11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196AE445200B019E00926A11 /* LaunchScreen.storyboard */; };
+		196AE459200B0E9C00926A11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 196AE458200B0E9C00926A11 /* GoogleService-Info.plist */; };
+		196AE464200B2BC600926A11 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196AE463200B2BC600926A11 /* AuthProvider.swift */; };
+		196AE466200B2BE700926A11 /* isEmailRegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196AE465200B2BE700926A11 /* isEmailRegularExpression.swift */; };
+		196AE46E200B34DF00926A11 /* DriverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196AE46D200B34DF00926A11 /* DriverVC.swift */; };
+		196AE474200C08D400926A11 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196AE473200C08D400926A11 /* DBProvider.swift */; };
+		196AE476200C092800926A11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196AE475200C092800926A11 /* Constants.swift */; };
+		19858D66200C60FC00FD7269 /* UberHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19858D65200C60FC00FD7269 /* UberHandler.swift */; };
+		C8640E9ABC2B9021346E589F /* Pods_iDrive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E1EDB40D0EC9E7961655FA /* Pods_iDrive.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		051235E5D7B68263C777B9B5 /* Pods-iDrive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDrive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDrive/Pods-iDrive.debug.xcconfig"; sourceTree = "<group>"; };
+		196AE439200B019E00926A11 /* iDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		196AE43C200B019E00926A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		196AE43E200B019E00926A11 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		196AE441200B019E00926A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		196AE443200B019E00926A11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		196AE446200B019E00926A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		196AE448200B019E00926A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		196AE458200B0E9C00926A11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		196AE463200B2BC600926A11 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		196AE465200B2BE700926A11 /* isEmailRegularExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isEmailRegularExpression.swift; sourceTree = "<group>"; };
+		196AE46D200B34DF00926A11 /* DriverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverVC.swift; sourceTree = "<group>"; };
+		196AE473200C08D400926A11 /* DBProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		196AE475200C092800926A11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		19858D65200C60FC00FD7269 /* UberHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberHandler.swift; sourceTree = "<group>"; };
+		8FCB127E4B3A41729C4A88C0 /* Pods-iDrive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDrive.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDrive/Pods-iDrive.release.xcconfig"; sourceTree = "<group>"; };
+		D9E1EDB40D0EC9E7961655FA /* Pods_iDrive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDrive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		196AE436200B019E00926A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8640E9ABC2B9021346E589F /* Pods_iDrive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		196AE430200B019E00926A11 = {
+			isa = PBXGroup;
+			children = (
+				196AE43B200B019E00926A11 /* iDrive */,
+				196AE43A200B019E00926A11 /* Products */,
+				7E46CF68E8F82AA8B58E7FE9 /* Pods */,
+				D055ADE9A73B3C7DEB39CF91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		196AE43A200B019E00926A11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				196AE439200B019E00926A11 /* iDrive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		196AE43B200B019E00926A11 /* iDrive */ = {
+			isa = PBXGroup;
+			children = (
+				196AE462200B2B7D00926A11 /* Plugins */,
+				196AE461200B2B7400926A11 /* Extensions */,
+				196AE45A200B0FC100926A11 /* Supporting Files */,
+				196AE455200B05F100926A11 /* Controllers */,
+				196AE454200B05ED00926A11 /* View */,
+				196AE453200B05E900926A11 /* Model */,
+				196AE440200B019E00926A11 /* Main.storyboard */,
+				196AE443200B019E00926A11 /* Assets.xcassets */,
+				196AE458200B0E9C00926A11 /* GoogleService-Info.plist */,
+				196AE448200B019E00926A11 /* Info.plist */,
+			);
+			path = iDrive;
+			sourceTree = "<group>";
+		};
+		196AE453200B05E900926A11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		196AE454200B05ED00926A11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		196AE455200B05F100926A11 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				196AE43E200B019E00926A11 /* SignInVC.swift */,
+				196AE46D200B34DF00926A11 /* DriverVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		196AE45A200B0FC100926A11 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				196AE43C200B019E00926A11 /* AppDelegate.swift */,
+				196AE445200B019E00926A11 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		196AE461200B2B7400926A11 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				196AE465200B2BE700926A11 /* isEmailRegularExpression.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		196AE462200B2B7D00926A11 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				196AE463200B2BC600926A11 /* AuthProvider.swift */,
+				196AE473200C08D400926A11 /* DBProvider.swift */,
+				196AE475200C092800926A11 /* Constants.swift */,
+				19858D65200C60FC00FD7269 /* UberHandler.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		7E46CF68E8F82AA8B58E7FE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				051235E5D7B68263C777B9B5 /* Pods-iDrive.debug.xcconfig */,
+				8FCB127E4B3A41729C4A88C0 /* Pods-iDrive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D055ADE9A73B3C7DEB39CF91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9E1EDB40D0EC9E7961655FA /* Pods_iDrive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		196AE438200B019E00926A11 /* iDrive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 196AE44B200B019E00926A11 /* Build configuration list for PBXNativeTarget "iDrive" */;
+			buildPhases = (
+				D8AA6A4268891F126BBBB2BB /* [CP] Check Pods Manifest.lock */,
+				196AE435200B019E00926A11 /* Sources */,
+				196AE436200B019E00926A11 /* Frameworks */,
+				196AE437200B019E00926A11 /* Resources */,
+				A433EE9945C09FE8923623A9 /* [CP] Embed Pods Frameworks */,
+				0837F1ED7FCD8D8B1C0B015D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDrive;
+			productName = iDrive;
+			productReference = 196AE439200B019E00926A11 /* iDrive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		196AE431200B019E00926A11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Nishant Hooda";
+				TargetAttributes = {
+					196AE438200B019E00926A11 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 196AE434200B019E00926A11 /* Build configuration list for PBXProject "iDrive" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 196AE430200B019E00926A11;
+			productRefGroup = 196AE43A200B019E00926A11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				196AE438200B019E00926A11 /* iDrive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		196AE437200B019E00926A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196AE447200B019E00926A11 /* LaunchScreen.storyboard in Resources */,
+				196AE444200B019E00926A11 /* Assets.xcassets in Resources */,
+				196AE442200B019E00926A11 /* Main.storyboard in Resources */,
+				196AE459200B0E9C00926A11 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0837F1ED7FCD8D8B1C0B015D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDrive/Pods-iDrive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A433EE9945C09FE8923623A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iDrive/Pods-iDrive-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDrive/Pods-iDrive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8AA6A4268891F126BBBB2BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDrive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		196AE435200B019E00926A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19858D66200C60FC00FD7269 /* UberHandler.swift in Sources */,
+				196AE46E200B34DF00926A11 /* DriverVC.swift in Sources */,
+				196AE474200C08D400926A11 /* DBProvider.swift in Sources */,
+				196AE464200B2BC600926A11 /* AuthProvider.swift in Sources */,
+				196AE43F200B019E00926A11 /* SignInVC.swift in Sources */,
+				196AE476200C092800926A11 /* Constants.swift in Sources */,
+				196AE43D200B019E00926A11 /* AppDelegate.swift in Sources */,
+				196AE466200B2BE700926A11 /* isEmailRegularExpression.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		196AE440200B019E00926A11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				196AE441200B019E00926A11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		196AE445200B019E00926A11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				196AE446200B019E00926A11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		196AE449200B019E00926A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		196AE44A200B019E00926A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		196AE44C200B019E00926A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 051235E5D7B68263C777B9B5 /* Pods-iDrive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iDrive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.n3hooda.iDrive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		196AE44D200B019E00926A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FCB127E4B3A41729C4A88C0 /* Pods-iDrive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iDrive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.n3hooda.iDrive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		196AE434200B019E00926A11 /* Build configuration list for PBXProject "iDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196AE449200B019E00926A11 /* Debug */,
+				196AE44A200B019E00926A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		196AE44B200B019E00926A11 /* Build configuration list for PBXNativeTarget "iDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196AE44C200B019E00926A11 /* Debug */,
+				196AE44D200B019E00926A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 196AE431200B019E00926A11 /* Project object */;
+}
